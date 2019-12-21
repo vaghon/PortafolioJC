@@ -147,7 +147,7 @@ var controller = {
     
         if(req.files){
           var filePath = req.files.logo.path;
-          var fileSplit = filePath.split('\\');
+          var fileSplit = filePath.split('/');
           var fileName = fileSplit[1];
           var extSplit = fileName.split('\.');
           var fileExt = extSplit[1];
@@ -184,7 +184,7 @@ var controller = {
     
         if(req.files){
           var filePath = req.files.svg.path;
-          var fileSplit = filePath.split('\\');
+          var fileSplit = filePath.split('/');
           var fileName = fileSplit[1];
           var extSplit = fileName.split('\.');
           var fileExt = extSplit[1];
